@@ -3,6 +3,9 @@ class Breakfast {
         this.food = food; 
         this.drink = drink;
     }
+    combination() {
+        return `Yum! ${this.food} and ${this.drink} are a great combo!`
+    }
 }
 class Lunch {
     constructor (salad, soup, drink) {
@@ -19,3 +22,7 @@ class Dinner {
         this._dessert = dessert; 
     }
 }
+
+let smoothie = new Breakfast('strawberry', 'almond milk'); 
+console.log(smoothie); 
+console.log(smoothie.combination);
